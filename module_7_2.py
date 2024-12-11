@@ -12,6 +12,7 @@ def custom_write(file_name, strings):
         strings_positions[(number_string, file.tell())] = new_string
         file.write(f'{new_string}\n')
         number_string += 1
+    file.close()
     return strings_positions
 
 
